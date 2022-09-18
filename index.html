@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-lg-top container">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/logoo.png" alt="" style="width: 58px; height: 50px; "></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="border-left: 2px solid gray">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cars
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Sedan</a></li>
+                        <li><a class="dropdown-item" href="#">SUV</a></li>
+                        <li><a class="dropdown-item" href="#">CrossOver</a></li>
+                        <li><a class="dropdown-item" href="#">Coupe</a></li>
+                        <li><a class="dropdown-item" href="#">MPV</a></li>
+
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contactUs.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide mt-4 border border-3 container" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/1.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container">
+    <br><br>
+    <h1 id='textbg' > You Here For Following Your Dreams ! Benz ...</h1>
+    <h3 class="container-sm col-9 mt-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias delectus ducimus eligendi eum eveniet ipsa laboriosam mollitia necessitatibus pariatur, qui quisquam quod rerum veniam vero. Accusantium animi, assumenda culpa cum cumque dicta distinctio dolore est ex, explicabo fugiat hic ipsum libero magnam maxime nesciunt nostrum officia pariatur praesentium quaerat quia quis reprehenderit rerum sed ullam ut vel, vitae voluptate.</h3>
+</div>
+<div id="bgweb" class="container-fluid mt-5"></div>
+<div>
+    <h1 id='textmid' class="container" > Order Best !</h1>
+</div>
+<!--<div class="container">-->
+<!--    <div class="row text-center">-->
+<!--        <div class="col-4">-->
+<!--            <div class="card" style="width: 18rem;">-->
+<!--            <img class="card-img-top" src="..." alt="Card image cap">-->
+<!--            <div class="card-body">-->
+<!--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--            </div>-->
+<!--        </div></div>-->
+<!--        <div class="col-4">2</div>-->
+<!--        <div class="col-4">3</div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="container">
+    <div  class="card-group border border-0">
+        <div id="card1" class="card">
+            <img class="card-img-top" src="assets/img/coupe.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center ">Coupe</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated Recenty</small></p>
+            </div>
+        </div>
+        <div id="card2" class="card">
+            <img class="card-img-top" src="assets/img/crossover.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">SUV</h5>
+                <p class="card-text ">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated Recenty</small></p>
+            </div>
+        </div>
+        <div id="card3" class="card">
+            <img class="card-img-top" src="assets/img/mpv.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">MPV</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated Recenty</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div  class="mt-5 container-sm row ">
+          <div class="col-4"></div>
+        <div class='container col-4' id="Gallery-3D"   >
+            <img src="assets/img/elect1.jpeg" alt="" class="First opacity-100" >
+            <img src="assets/img/elec2.jpg" alt="" class="Second opacity-100" >
+            <img src="assets/img/elec3.jpg" alt="" class="Third opacity-100">
+        </div>
+        </div>
+<div class="col-4"></div>
+<script src="script.js"></script>
+
+
+
+
+
+</body>
+</html>

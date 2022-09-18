@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Benz;
+    src: url("assets/Fonts/brand.otf");
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Benz;
+}
+#textbg {
+    background-color: rgba(198, 220, 223, 0.30);
+}
+#bgweb {
+    background-image: url("assets/bg.jpg");
+    margin: 50px 0 50px 0;
+    height: 250px;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 400% 70px 120px 150px;
+}
+#textmid {
+    text-align: center;
+    color: silver;
+    border: 2px solid gray;
+    border-radius: 8px;
+    width: 300px;
+    transition: 500ms;
+    margin-bottom: 50px;
+}
+#textmid:hover {
+    border-radius: 10px;
+    width: 350px;
+}
+#card1:hover {
+    transform: scale(101%);
+}
+#card2:hover {
+    transform: scale(101%);
+}
+#card3:hover {
+    transform: scale(101%);
+}
+#Gallery-3D img {
+
+    height: 450px;
+    width: 600px;
+    max-width: 800px;
+
+    position: absolute;
+    border-radius: 37px;
+
+}
+#Gallery-3D .First {
+    z-index: 99;
+
+    padding: 30px;
+}
+#Gallery-3D .Second {
+    padding: 15px;
+    z-index: 98;
+}
+#Gallery-3D .Third {
+    z-index: 97;
+}
+#Gallery-3D .Active {
+    transition: 666ms;
+    transform: scale(1.5);
+
+}
+#Gallery-3D .inactive {
+    transform: scale(0.3);
+    transition: 300ms;
+}
+
