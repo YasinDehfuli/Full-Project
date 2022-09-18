@@ -8,25 +8,30 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
 </head>
 <body>
 <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky sticky-xxl-top container">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="assets/logoo.png" alt="" style="width: 58px; height: 50px; "></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html" style="border-left: 2px solid gray">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html"
+                       style="border-left: 2px solid gray">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="order.html">Order</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
                         Cars
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -53,9 +58,12 @@
 
 <div id="carouselExampleIndicators" class="carousel slide mt-4 border border-3 container" data-bs-ride="carousel">
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -68,23 +76,29 @@
             <img src="assets/1.jpg" class="d-block w-100" alt="...">
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>
 <div class="container">
     <br><br>
-    <h1 id='textbg' > You Here For Following Your Dreams ! Benz ...</h1>
-    <h3 class="container-sm col-9 mt-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias delectus ducimus eligendi eum eveniet ipsa laboriosam mollitia necessitatibus pariatur, qui quisquam quod rerum veniam vero. Accusantium animi, assumenda culpa cum cumque dicta distinctio dolore est ex, explicabo fugiat hic ipsum libero magnam maxime nesciunt nostrum officia pariatur praesentium quaerat quia quis reprehenderit rerum sed ullam ut vel, vitae voluptate.</h3>
+    <h1 id='textbg'> You Here For Following Your Dreams ! Benz ...</h1>
+    <h3 class="container-sm col-9 mt-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias
+        delectus ducimus eligendi eum eveniet ipsa laboriosam mollitia necessitatibus pariatur, qui quisquam quod rerum
+        veniam vero. Accusantium animi, assumenda culpa cum cumque dicta distinctio dolore est ex, explicabo fugiat hic
+        ipsum libero magnam maxime nesciunt nostrum officia pariatur praesentium quaerat quia quis reprehenderit rerum
+        sed ullam ut vel, vitae voluptate.</h3>
 </div>
 <div id="bgweb" class="container-fluid mt-5"></div>
 <div>
-    <h1 id='textmid' class="container" > Order Best !</h1>
+    <h1 id='textmid' class="container"> Order Best !</h1>
 </div>
 <!--<div class="container">-->
 <!--    <div class="row text-center">-->
@@ -101,12 +115,13 @@
 <!--</div>-->
 
 <div class="container">
-    <div  class="card-group border border-0">
+    <div class="card-group border border-0">
         <div id="card1" class="card">
             <img class="card-img-top" src="assets/img/coupe.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title text-center ">Coupe</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated Recenty</small></p>
             </div>
         </div>
@@ -114,7 +129,8 @@
             <img class="card-img-top" src="assets/img/crossover.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title text-center">SUV</h5>
-                <p class="card-text ">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text ">This card has supporting text below as a natural lead-in to additional
+                    content.</p>
                 <p class="card-text"><small class="text-muted">Last updated Recenty</small></p>
             </div>
         </div>
@@ -122,7 +138,8 @@
             <img class="card-img-top" src="assets/img/mpv.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title text-center">MPV</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
                 <p class="card-text"><small class="text-muted">Last updated Recenty</small></p>
             </div>
         </div>
@@ -134,12 +151,13 @@
     </h2>
 </div>
 
+<div id="particle" class="container mt-5 mb-5">
+    <!-- particles.js container -->
+    <div id="particles-js"></div> <!-- stats - count particles -->
+</div>
 
 
 <script src="script.js"></script>
-
-
-
 
 
 </body>

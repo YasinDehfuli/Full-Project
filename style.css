@@ -2,14 +2,17 @@
     font-family: Benz;
     src: url("assets/Fonts/brand.otf");
 }
+
 * {
     padding: 0;
     margin: 0;
     font-family: Benz;
 }
+
 #textbg {
     background-color: rgba(198, 220, 223, 0.30);
 }
+
 #bgweb {
     background-image: url("assets/bg.jpg");
     margin: 50px 0 50px 0;
@@ -18,6 +21,7 @@
     background-attachment: fixed;
     border-radius: 400% 70px 120px 150px;
 }
+
 #textmid {
     text-align: center;
     color: silver;
@@ -27,16 +31,20 @@
     transition: 500ms;
     margin-bottom: 50px;
 }
+
 #textmid:hover {
     border-radius: 10px;
     width: 350px;
 }
+
 #card1:hover {
     transform: scale(101%);
 }
+
 #card2:hover {
     transform: scale(101%);
 }
+
 #card3:hover {
     transform: scale(101%);
 }
@@ -47,12 +55,32 @@
     border-bottom: 2px solid gray;
 
 }
+
 #electtext h2 {
     font-size: 60px;
     transition: 300ms;
 }
-#electtext:hover{
-    letter-spacing: 6px;
+
+#electtext:hover {
+    letter-spacing: 2px;
     color: silver;
 }
+
+/* ---- reset ---- */
+
+
+
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: #b61924;
+    background-image: url("assets/img/elec2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
 
