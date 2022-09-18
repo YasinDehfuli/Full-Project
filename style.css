@@ -40,35 +40,19 @@
 #card3:hover {
     transform: scale(101%);
 }
-#Gallery-3D img {
 
-    height: 450px;
-    width: 600px;
-    max-width: 800px;
-
-    position: absolute;
-    border-radius: 37px;
+#electtext {
+    margin-top: 35px;
+    display: block;
+    border-bottom: 2px solid gray;
 
 }
-#Gallery-3D .First {
-    z-index: 99;
-
-    padding: 30px;
-}
-#Gallery-3D .Second {
-    padding: 15px;
-    z-index: 98;
-}
-#Gallery-3D .Third {
-    z-index: 97;
-}
-#Gallery-3D .Active {
-    transition: 666ms;
-    transform: scale(1.5);
-
-}
-#Gallery-3D .inactive {
-    transform: scale(0.3);
+#electtext h2 {
+    font-size: 60px;
     transition: 300ms;
+}
+#electtext:hover{
+    letter-spacing: 6px;
+    color: silver;
 }
 
