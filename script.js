@@ -43,3 +43,34 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
+
+
+$(document).ready(function() {
+    $("div.dropdown button").click((event) => {
+        if($(event.target).next().css('display') == 'flex'){
+            $(event.target).next().css('display', 'none');
+            $(event.target).children().removeClass('rotate');
+        } else if($(event.target).next().css('display') == 'none'){
+            $(event.target).next().css('display', 'flex');
+            $(event.target).children().addClass('rotate');
+        }
+    });
+
+    $('.hamburger').click(() => {
+        if($('nav').css('display') == 'none'){
+            $('nav').css('display', 'flex').css('animation-name', 'navAnim').addClass('animInfo').css('animation-duration', '.5s');
+            $('.hamburger :nth-child(1)').css('animation-name', 'bar1Anim').addClass('animInfo');
+            $('.hamburger :nth-child(2)').css('animation-name', 'bar2Anim').addClass('animInfo');
+            $('.hamburger :nth-child(3)').css('animation-name', 'bar3Anim').addClass('animInfo');
+        } else if($('nav').css('display') == 'flex'){
+            $('nav').css('display', 'none').css('animation-name', 'navAnimReverse').css('animation-duration', '.5s');
+            $('.hamburger :nth-child(1)').css('animation-name', 'bar1AnimReverse');
+            $('.hamburger :nth-child(2)').css('animation-name', 'bar2AnimReverse');
+            $('.hamburger :nth-child(3)').css('animation-name', 'bar3AnimReverse');
+        }
+    });
+
+    if ($(window).width() > 800 ) {
+        $('nav').removeClass('animInfo').css('animation-name', 'unset').css('opacity', '1');
+    }
+});

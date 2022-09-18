@@ -9,10 +9,9 @@
     font-family: Benz;
 }
 
-#textbg {
+#textbg{
     background-color: rgba(198, 220, 223, 0.30);
 }
-
 #bgweb {
     background-image: url("assets/bg.jpg");
     margin: 50px 0 50px 0;
@@ -21,7 +20,6 @@
     background-attachment: fixed;
     border-radius: 400% 70px 120px 150px;
 }
-
 #textmid {
     text-align: center;
     color: silver;
@@ -31,16 +29,13 @@
     transition: 500ms;
     margin-bottom: 50px;
 }
-
 #textmid:hover {
     border-radius: 10px;
     width: 350px;
 }
-
 #card1:hover {
     transform: scale(101%);
 }
-
 #card2:hover {
     transform: scale(101%);
 }
@@ -48,39 +43,309 @@
 #card3:hover {
     transform: scale(101%);
 }
-
 #electtext {
     margin-top: 35px;
     display: block;
     border-bottom: 2px solid gray;
-
 }
-
 #electtext h2 {
     font-size: 60px;
     transition: 300ms;
 }
-
 #electtext:hover {
     letter-spacing: 2px;
     color: silver;
 }
-
-/* ---- reset ---- */
-
-
-
-
-/* ---- particles.js container ---- */
 #particles-js {
     position: relative;
     width: 100%;
     height: 800px;
-    background-color: #b61924;
     background-image: url("assets/img/elec2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    border-radius: 10px;
+}
+
+
+nav {
+    width: 70%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    opacity: 1;
+}
+
+nav .dropdown button{
+    width: max-content;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    background: none;
+    outline: none;
+    border: none;
+}
+nav .dropdown button span {
+    font-size: 1.25rem;
+    display: none;
+}
+
+nav .dropdown button:hover{
+    color: red;
+    text-decoration: underline;
+    border-bottom: solid 3px red;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+.header {
+    display: none;
+}
+
+body {
+    position: relative;
+}
+.content {
+    display: none;
+    position: absolute;
+    left: 0;
+    max-width: 300px;
+    margin: 0;
+    padding-top: 20px;
+    background: rgba(220,220,220,.15);
+    border-top: 15px transparent solid;
+
+}
+
+.dropdown:hover .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+
+}
+
+#footer h2{
+    background: rgba(220,220,220,.75);
+    color: #333;
+    text-align: center;
+    width: 100%;
+    padding: 25px 0;
+    margin-top: -35px;
+    font-size: 2rem;
+}
+
+#footer h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.row :not(last-child){
+    margin-right: 35px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.column a {
+    color: black;
+    text-decoration: none;
+    font-size: .9rem;
+}
+.column a:not(last-child){
+    margin-bottom: 10px;
+}
+.column a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.seeAll {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+.seeAll a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.15rem;
+}
+.seeAll a i {
+    color: red;
+    font-size: .9rem;
+}
+.seeAll a:hover {
+    color: red;
+}
+
+.hamburger {
+    width: 35px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+.hamburger .bar {
+    width: 100%;
+    height: 7px;
+    background: #333;
+    border-radius: 5px;
+}
+.rotate {
+    transform: rotate(90deg);
+    color: red;
+}
+
+@media (max-width: 800px){
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .container {
+        padding: 15px;
+    }
+    nav {
+        width: 50%;
+        flex-direction: column;
+        height: 100%;
+        padding: unset;
+        margin: unset;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: flex-start;
+        display: none;
+    }
+    nav .dropdown,
+    .seeAll{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav .dropdown button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #eee;
+    }
+    nav .dropdown button span {
+        display: inline;
+    }
+    nav .dropdown button:hover{
+        color: black;
+        text-decoration: none;
+        border-bottom-color: #eee;
+        cursor: unset;
+    }
+    nav .dropdown:hover .content {
+        display: none;
+    }
+    .content {
+        display: none;
+        position: unset;
+        width: 100%;
+        padding: unset;
+        flex-direction: column;
+    }
+    .content h2 {
+        display: none;
+    }
+    .row {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .column {
+        padding: 0 20px;
+        margin: 0 0 10px 0;
+    }
+    .seeAll{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    nav {
+        width: 100%;
+    }
+}
+
+/* Animation for hamburger menu */
+.animInfo {
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+@keyframes bar1Anim {
+    0%{transform: rotate(0deg) translate(0px);}
+    100%{transform: rotate(45deg) translate(6px, 10px);}
+}
+@keyframes bar2Anim {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes bar3Anim {
+    0%{transform: rotate(0deg) translate(0px);}
+    100%{transform: rotate(-45deg) translate(6px, -10px);}
+}
+
+@keyframes bar1AnimReverse {
+    0%{transform: rotate(45deg) translate(6px, 10px);}
+    100%{transform: rotate(0deg) translate(0px);}
+}
+@keyframes bar2AnimReverse {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes bar3AnimReverse {
+    0%{transform: rotate(-45deg) translate(6px, -10px);}
+    100%{transform: rotate(0deg) translate(0px);}
+}
+
+/* Animation for navigation appearing */
+@keyframes navAnim {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes navAnimReverse {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@media (min-width: 700px){
+    nav {
+        opacity: 1 !important;
+    }
+}
+#top-footer {
+    width: 100%;
+    height: 900px;
+}
+#search {
+    width: 450px;
+    text-align: center;
 }
 
 
