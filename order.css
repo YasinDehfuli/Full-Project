@@ -1,0 +1,644 @@
+* {
+    box-sizing: border-box;
+}
+
+content, .fixed_menu {
+    max-width: 1200px;
+}
+
+body {
+    margin: 0;
+    font-family: "cera pro", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #1d2e40;
+    --abt_green: #008023;
+    --abt_green2: #06a076;
+}
+h1,
+h2,
+h3, h4,
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: calc(1em + 3vw);
+}
+
+h2 {
+    font-size: calc(1em + 2vw);
+}
+
+h3 {
+    font-size: calc(1em + 0.4vw);
+}
+
+h4 {
+    font-size: calc(1em + 0.2vw);
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+content {
+    margin: auto 0;
+    align-self: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+column {
+    overflow: hidden;
+}
+
+section.intro p {
+    font-size: calc(1em + 0.4vw);
+}
+
+section.intro a {
+    text-decoration: none;
+    color: white;
+}
+
+section.intro {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    background: black
+    url(https://thumb.tildacdn.com/tild6638-6663-4762-b562-326439313836/-/format/webp/231FD366-E220-4605-A.jpeg)
+    center / cover no-repeat fixed;
+    color: white;
+    height: 100vh;
+}
+
+section.smenu {
+    text-align: center;
+}
+
+section.intro:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.8)
+    );
+    z-index: 1;
+}
+
+.intro span {
+    background: var(--abt_green);
+    display: inline-block;
+    margin-top: 10vh;
+    padding: 15px 50px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.15s ease-in;
+}
+
+.intro span:hover {
+    background: var(--abt_green2);
+}
+
+.intro span:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(
+            90deg,
+            transparent 0%,
+            white 95%,
+            transparent 100%
+    );
+    opacity: 0.75;
+    bottom: 0;
+    left: 0;
+    transform: skew(-40deg);
+    width: 20%;
+    height: 100%;
+    display: block;
+    animation: blink 4s infinite linear;
+}
+
+@keyframes blink {
+    0% {
+        left: -25%;
+    }
+    20%,
+    100% {
+        left: 125%;
+    }
+}
+
+/* Scroll button */
+.scroll_arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translatex(-50%) rotate(45deg);
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-bottom: 2px solid var(--abt_green);
+    border-right: 2px solid var(--abt_green);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    animation: spin 2s infinite ease-in-out;
+}
+
+@keyframes spin {
+    0%,
+    100% {
+        transform: translate(-50%, 0%) rotate(45deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}
+
+/* Fixed menu */
+.fixed_menu_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    transition: all 0.15s linear;
+    z-index: 100;
+}
+
+.fixed_menu {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.fixed_menu a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: all .15s linear;
+}
+
+.fixed_menu a:nth-child(n + 2) {
+    margin-left: 30px;
+}
+
+.fixed_menu a.active{
+    opacity: .5;
+}
+
+@media (max-width: 768px) {
+    .fixed_menu_box {
+        position: relative;
+    }
+    .fixed_menu a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+    .fixed_menu a:nth-child(n + 2) {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+/* Section for service */
+.title_w_sub {
+    text-align: center;
+    margin: 100px auto 50px;
+    max-width: 600px;
+
+}
+
+.title_w_sub p {
+    font-size: calc(1em + 0.2vw);
+    margin: 0;
+}
+
+.gr_1_2_1 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 30px;
+    align-self: center;
+    justify-self: center;
+}
+
+.gr_1_2_1 column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .gr_1_2_1 column:nth-child(1) {
+        text-align: right;
+    }
+}
+
+@media (max-width: 768px) {
+    .gr_1_2_1 {
+        grid-template-columns: 1fr ;
+    }
+}
+
+/* Section for car */
+.gr_1_1_1_1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+@media (max-width: 768px) {
+    .gr_1_1_1_1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.car_item {
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.car_item h4 strong {
+    color: var(--abt_green);
+}
+
+.car_item_image {
+    position: relative;
+    margin-bottom: 20px;
+}
+.car_item_image:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.car_item_image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    left: 0;
+}
+
+.car_item a {
+    background: var(--abt_green);
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 3px;
+    transition: all .15s linear;
+    cursor: pointer;
+}
+
+.car_item a:hover {
+    background: var(--abt_green2);
+}
+
+.divider {
+    height: 30px;
+}
+
+/* Section for service */
+.title_w_sub2 {
+    text-align: center;
+    margin: 100px auto 50px;
+    max-width: 800px;
+
+}
+
+.title_w_sub2 p{
+    font-size: calc(1em + 0.2vw);
+    text-align: left;
+}
+
+/* Formbox */
+section.formbox {
+    position: relative;
+    align-items: center;
+    background: black
+    url(https://static.tildacdn.com/tild3735-3338-4566-b062-663462366536/0E11D460-5475-47E9-8.jpeg)
+    center / cover no-repeat fixed;
+}
+
+section.formbox:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.7)
+    );
+    z-index: 1;
+}
+
+.formbox_container {
+    max-width: 600px;
+    color: white;
+    margin: 100px auto;
+}
+
+.formbox_container span {
+    margin-top: 20px;
+    display: block;
+    font-size: 75%;
+}
+
+.awcf_group input:not(:placeholder-shown) + label,
+.awcf_group input:focus + label,
+.awcf_textarea textarea:not(:placeholder-shown) + label,
+.awcf_textarea textarea:focus + label,
+.awcf_list select:valid + label,
+.awcf_list select:focus + label {
+    top: -20px;
+    padding: 0;
+    font-size: 80%;
+    opacity: 0.8;
+    transform: inherit;
+}
+
+.awcf_group input:required + label:after,
+.awcf_list select:required + label:after {
+    content: " ◬";
+    color: red;
+    margin-left: auto;
+}
+
+.awcf_group input:not(:placeholder-shown) + label:after,
+.awcf_group input:focus + label:after,
+.awcf_textarea textarea:not(:placeholder-shown) + label:after,
+.awcf_textarea textarea:focus + label:after,
+.awcf_list select:valid + label:after,
+.awcf_list select:focus + label:after {
+    content: ":";
+    color: black;
+}
+
+.awcf_textarea label:after {
+    content: " ...";
+}
+
+.awcf_group,
+.awcf_textarea,
+.awcf_list {
+    position: relative;
+    line-height: 1.5;
+    z-index: 2;
+}
+
+.awcf_group label,
+.awcf_textarea label,
+.awcf_list label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    line-height: 1.5;
+    transition: all 0.15s ease-out;
+    cursor: text;
+    font-size: 16px;
+    z-index: -1;
+}
+
+.awcf_group input,
+.awcf_textarea textarea,
+.awcf_list select {
+    line-height: 1.5;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Cera Pro", sans-serif;
+    border: 1px solid grey;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+}
+
+
+.awcf_group,
+.awcf_textarea,
+.awcf_list {
+    margin-bottom: 30px;
+}
+
+.awcf_group input:focus,
+.awcf_textarea textarea:focus,
+.awcf_list select:focus {
+    border: 1px solid var(--abt_green);
+}
+
+/* Fix textarea */
+.awcf_textarea textarea {
+    min-height: 95px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+/* List */
+.aw_contact_form button {
+    font-family: "Cera Pro", sans-serif;
+    background: var(--abt_green);
+    color: white;
+    display: inline-block;
+    padding: 30px 50px;
+    border-radius: 5px;
+    width: 100%;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    font-size: 16px;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+.aw_contact_form button:hover {
+    background: var(--abt_green2);
+}
+
+.awcf_list option {
+    background-color: var(--abt_green);
+}
+
+/* Secion for contact */
+section.s_contact content {
+    max-width: initial;
+    padding: 0;
+    background-color: #292929;
+}
+
+
+.gr_1_1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+@media (max-width: 768px) {
+    .gr_1_1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.gr_1_1 column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact_list {
+    color: white;
+    padding: 100px 20px;
+}
+
+/* Styles for modal window */
+.abt_modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20vh 20vh rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    animation: aws_in linear 0.15s;
+    animation-iteration-count: 1;
+}
+
+.abt_modal_container {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+}
+
+.abt_modal_cover {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.abt_modal_box {
+    position: relative;
+    background: white;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 20px;
+    pointer-events: auto;
+}
+
+@keyframes aws_in {
+    from {
+        opacity: 0;
+        transform: translatey(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+.vhidden {
+    animation: aws_out linear 0.15s;
+    animation-iteration-count: 1;
+}
+
+@keyframes aws_out {
+    from {
+        opacity: 1;
+        transform: translatey(0);
+    }
+    to {
+        opacity: 0;
+        transform: translatey(-10%);
+    }
+}
+
+.abt_modal_content {
+    padding: 20px;
+}
+
+.abt_modal_content h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.aws_close {
+    position: absolute;
+    right: 0;
+    color: white;
+    top: -30px;
+    cursor: pointer;
+}
+
+/* Order car form */
+.car_order input,
+.car_order textarea,
+.car_order select {
+    line-height: 1.5;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Cera Pro", sans-serif;
+    border: 1px solid grey;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+.car_order input[type=submit] {
+    background: var(--abt_green);
+    transition: all 0.15s ease-in;
+    color: white;
+    border: none;
+    transition: all .15s linear;
+    cursor: pointer;
+}
+
+.car_order input[type=submit]:hover {
+    background: var(--abt_green2);
+}
+
+.car_order input[type=reset] {
+    display: block;
+    transition: all 0.15s ease-in;
+    color: grey;
+    border: none;
+    width: auto;
+    padding: 5px 15px;
+    margin: 0 auto;
+    cursor: pointer;
+}

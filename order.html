@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Order Now</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="order.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
@@ -15,7 +15,8 @@
 <body>
 <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky sticky-xxl-top container">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="assets/logoo.png" alt="" style="width: 58px; height: 50px; "></a>
+        <a class="navbar-brand" href="index.html"><img src="assets/logoo.png" alt=""
+                                                       style="width: 58px; height: 50px; "></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,5 +56,288 @@
         </div>
     </div>
 </nav>
-</body>
-</html>
+
+<section class="intro" style="display: none;">
+    <content>
+        <h1>Авто Бизнес Транс</h1>
+        <p>
+            Межрегиональные грузовые перевозки всех типов. Оставьте свои данные в
+            обратной форме и мы свяжемся с вами
+        </p>
+        <a href="#s_partners"><span>Получить консультацию</span></a>
+        <a href="#s_service" class="scroll_arrow"><div></div></a>
+    </content>
+</section>
+
+<section class="smenu">
+    <div class="fixed_menu_box">
+        <div class="fixed_menu">
+            <a href="#s_service">Наши услуги</a><a href="#s_cars">Выбор автомобиля</a
+        ><a href="#s_partners">Партнёрам</a><a href="#s_contact">Контакты</a>
+        </div>
+    </div>
+</section>
+
+<section id="s_service" style="display: none;">
+    <content>
+        <div class="title_w_sub wow bounceInUp">
+            <h2>Наши услуги</h2>
+            <p>
+                Компания Авто Бизнес Транс специализуруется на грузовых перевозках
+                следующих форматов:
+            </p>
+        </div>
+    </content>
+    <content>
+        <row class="gr_1_2_1">
+            <column>
+                <div>
+                    <h3 class="wow fadeInLeft">Перевозка ТНП</h3>
+                    <p class="wow fadeInLeft" data-wow-delay="0.2s">Подберём автомобиль по вашим параметрам и под ваш груз.</p>
+                    <div class="divider"></div>
+                    <h3 class="wow fadeInLeft" data-wow-delay="0.3s">Перевозка продуктов питания</h3>
+                    <p class="wow fadeInLeft" data-wow-delay="0.4s">Качественные холодильные камеры сохранят ваши продукты и доставят
+                        груз в нужный срок
+                    </p>
+                    <div class="divider"></div>
+                    <h3 class="wow fadeInLeft" data-wow-delay="0.5s">Перевозка сельхозпродукции</h3>
+                    <p class="wow fadeInLeft" data-wow-delay="0.6s">Тенты, зерновозы, холодильные кузова - ночью и днём приедем,
+                        погрузим, доставим.
+                    </p>
+                </div>
+            </column>
+            <column>
+                <div class="wow bounceInUp">
+                    <img
+                            src="https://thumb.tildacdn.com/tild3731-3734-4631-b262-363166363033/-/resize/600x/-/format/webp/__.jpg"
+                    />
+                </div>
+            </column>
+            <column>
+                <div>
+                    <h3 class="wow fadeInRight">Переезды</h3>
+                    <p class="wow fadeInRight" data-wow-delay="0.2s">Наши грузчики соберут/разберут вашу мебель, технику, погрузят,
+                        доставят и установят на новом месте вашу мебель.
+                    </p>
+                    <div class="divider"></div>
+                    <h3 class="wow fadeInRight" data-wow-delay="0.3s">Металлопрокат</h3>
+                    <p class="wow fadeInRight" data-wow-delay="0.4s">
+                        От арматуры и до листового формата. Отработка металла в бигбегах.
+                    </p>
+                </div>
+            </column>
+        </row>
+    </content>
+</section>
+
+<section id="s_cars" style="display: 0none;">
+    <content>
+        <div class="title_w_sub wow bounceInUp">
+            <h2>Benz Gives You The Best</h2>
+            <p>Here You Can Choose And Buy Any Type Of Benz Cars You Want :</p>
+        </div>
+    </content>
+    <content>
+        <row class="gr_1_1_1_1">
+            <column>
+                <div class="car_item wow fadeInRight">
+                    <div class="car_item_image">
+                        <img
+                                src="assets/img/order%20list/a-class.png"
+                        />
+                    </div>
+
+                    <h4>
+                        Автомобили грузоподъёмностью<br /><strong>от 1.5 тонны</strong>
+                    </h4>
+                    <p>A-Class</p>
+                    <a data-val="1.5 тонны" class="abt_modal_button">Order Now</a>
+                </div>
+            </column>
+            <column>
+                <div class="car_item wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="car_item_image">
+                        <img
+                                src="assets/img/order%20list/c-class.png"
+                        />
+                    </div>
+                    <h4>Автомобили грузоподъёмностью<br /><strong>от 5 тонн</strong></h4>
+                    <p>C-Class</p>
+                    <a data-val="5 тонн" class="abt_modal_button">Order Now</a>
+                </div>
+            </column>
+            <column>
+                <div class="car_item wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="car_item_image">
+                        <img
+                                src="assets/img/order%20list/e-class.png"
+                        />
+                    </div>
+                    <h4>jdhsacuabcbdgashvdgbahsjgdgda<br /><strong>от 10 тонн</strong></h4>
+                    <p>E-Class</p>
+                    <a data-val="10 тонн" class="abt_modal_button">Order Now</a>
+                </div>
+            </column>
+            <column>
+                <div class="car_item wow fadeInRight" data-wow-delay="0.6s">
+                    <div class="car_item_image">
+                        <img
+                                src="assets/img/order%20list/g-class.png"
+                        />
+                    </div>
+                    <h4>Автомобили грузоподъёмностью<br /><strong>от 20 тонн</strong></h4>
+                    <p>G-Class</p>
+                    <a data-val="20 тонн" class="abt_modal_button">Order Now</a>
+                </div>
+            </column>
+        </row>
+    </content>
+    <content>
+        <div class="abt_modal_section">
+            <div class="abt_modal" style="display: none;">
+                <div class="abt_modal_container">
+                    <div class="abt_modal_cover"></div>
+                    <div class="abt_modal_box">
+                        <div class="abt_modal_intro">
+                            <img
+                                    src="https://static.tildacdn.com/tild3732-3330-4261-b639-313933356333/__.jpg"
+                            />
+                        </div>
+
+                        <div class="abt_modal_content">
+                            <h3>Закажите авто уже сейчас!</h3>
+                            <p>Заполнив форму, наш менеджер перезвонит вам предлагая варианты автомобилей и времени когда они могу приехать на загрузку!</p>
+
+                            <form class="car_order" action="car_order​_send.php" method="POST">
+                                <input type="email" name="email" placeholder="example@gmail.com" required />
+                                <input type="text" name="name" placeholder="Иванов Иван Иванович" pattern="[A-Za-zА-Яа-яЁё]{3,30}" required />
+                                <input id="car_order_phone" type="phone" name="phone" placeholder="+1 (999) 999-99-99" required />
+
+                                <p>Тип автомобиля</p>
+                                <select name="car_weight" id="car_weight" size="1">
+                                    <option value="A Class">A Class</option>
+                                    <option value="C Class">C Class</option>
+                                    <option value="E Class">E Class</option>
+                                    <option value="G Class">G Class</option>
+                                </select>
+                                <br />
+
+                                <p>TONNNNNNN</p>
+                                <select name="product_type" size="1">
+                                    <option value="Другое">Другое</option>
+                                    <option value="ТНП">ТНП</option>
+                                    <option value="Сельхозпродукция">Сельхозпродукция</option>
+                                    <option value="Продукты питания">Продукты питания</option>
+                                    <option value="Переезд">Переезд</option>
+                                    <option value="Металлопрокат">Металлопрокат</option>
+                                </select>
+
+                                <input type="submit" value="Отправить заявку"/><input type="reset" value="Очистить"/>
+                            </form>
+
+                        </div>
+                        <span class="aws_close">✕</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </content>
+</section>
+
+<section id="s_partners">
+    <content>
+        <div class="title_w_sub2 wow bounceInUp">
+            <h2>BENZ</h2>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto aut cum error fugit ipsum, molestiae molestias similique unde veritatis? Dicta doloribus enim labore magni necessitatibus pariatur, provident sunt. Accusantium dolorem doloribus et nihil obcaecati rerum tenetur ut, vel vero.
+            </p>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sunt vel velit voluptate! At consequatur dicta iusto mollitia quas quasi rerum saepe. Assumenda blanditiis consectetur cum delectus dignissimos dolorum earum et eum fugiat, harum, ipsam molestiae natus nesciunt obcaecati omnis, pariatur perspiciatis placeat provident quos sint soluta temporibus voluptatem voluptatibus?
+            </p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur distinctio eius hic iste itaque quod.</p>
+        </div>
+    </content>
+</section>
+
+<section class="formbox" id="s_contact">
+    <content>
+        <div class="formbox_container">
+            <form class="aw_contact_form" action="contact.php" method="post">
+                <div class="awcf_group">
+                    <input
+                            type="text"
+                            id="name"
+                            name="visitor_name"
+                            placeholder=" "
+                            pattern="[A-Za-zА-Яа-яЁё]{3,30}"
+                            required
+                    />
+                    <label for="name">UserName :</label>
+                </div>
+
+                <div class="awcf_group">
+                    <input
+                            type="email"
+                            id="email"
+                            name="visitor_email"
+                            placeholder=" "
+                            required
+                    />
+                    <label for="email">E-mail :</label>
+                </div>
+
+                <div class="awcf_group">
+                    <input
+                            type="text"
+                            id="title"
+                            name="email_title"
+                            required
+                            placeholder=" "
+                            pattern="выражение"
+                    />
+                    <label for="title">Tell :</label>
+                </div>
+
+                <div class="awcf_list">
+                    <select
+                            id="department-selection"
+                            name="concerned_department"
+                            required
+                    >
+                        <option value="" disabled selected></option>
+                        <option value="form_consult">Iran</option>
+                        <option value="marketing">Iraq</option>
+                        <option value="technical support">Qatar</option>
+                        <option value="technical support">United Arab Emirates</option>
+                        <option value="technical support">Turkey</option>
+                    </select>
+                    <label for="department-selection">Country :</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+            <span>* must fill all parts</span
+            >
+        </div>
+    </content>
+</section>
+
+<section class="s_contact" id="s_contact">
+    <content>
+        <row class="gr_1_1">
+            <column>
+                <div class="contact_list">
+                    <h2>Contact Us</h2>
+                    <p>Num: +1 098 972 95 02 ; +1 099 972 95 02</p>
+                    <p>Mail: Benz@Me.Com</p>
+                    <span>Adress. Tehran, Enghelab. Shohada, P 168 </span>
+                </div>
+            </column>
+            <column>
+                <iframe width="100%" height="440" src="https://maps.google.com/maps?q=tehran&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </column>
+        </row>
+    </content>
+</section>
+<!--<div class="mapouter"><div class="gmap_canvas"><iframe width="700" height="440" id="gmap_canvas" src="https://maps.google.com/maps?q=tehran&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br><style>.mapouter{position:relative;text-align:right;height:440px;width:700px;}</style><a href="https://www.embedgooglemap.net">google map for my website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:440px;width:700px;}</style></div></div>-->
