@@ -8,7 +8,9 @@
     margin: 0;
     font-family: Benz;
 }
-
+body{
+    background: linear-gradient(to right, #666666 0%, #1d2e40 100%);
+}
 #textbg{
     background-color: rgba(198, 220, 223, 0.30);
 }
@@ -177,4 +179,22 @@
         width: 100%;
     }
 }
+#navbar {
+    font-size: 24px;
+    border-radius: 18px;
+}
 
+#preloader{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
